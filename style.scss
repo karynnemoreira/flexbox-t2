@@ -1,0 +1,43 @@
+* {
+  margin: 0; //margem
+  padding: 0; //preenchimento
+  box-sizing: border-box; //aceite as medidas que eu colocar no meu código
+}
+
+// body{
+//     background-color: green;
+//     background-color: pink;
+//     background-color: red;
+//     background-color: yellow;
+// }
+
+header {
+  display: flex;
+  justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo x (horizontal)
+  justify-content: flex-end; //Os itens são postos no final do eixo x.
+  justify-content: center; //Centraliza os itens no eixo x.
+
+  justify-content: space-evenly; //Tem o mesmo espaçamento entre os itens.
+  justify-content: space-around; //Espaçamento ao redor
+  justify-content: space-between; //O primeiro e o último item ficam encostadas nas laterais, e os demais tem o  mesmo espaçamento entre sí.
+
+  background-color: pink;
+}
+
+nav {
+  background-color: yellow; //background-color: cor de fundo
+  width: 50%; //width=largura , Pegando 60% do tamanho da header. Sempre vai ser baseada na caixa pai.
+  width: 50vw; //viewport width. Sempre vai ser baseada no tamanho da janela de exibição.
+}
+
+ul {
+  border: solid blue; //border=borda, solid=tipo da borda, blue=cor da borda.
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  font-size: 32px; //font-size= tamanho da fonte
+  font-size: 2rem; // 16*2 = 32 É baseado na medida do elemento raiz, caso especificamos a medida. Caso não, ele é baseado em 16px
+  font-size: 2em; //16*2 = 32 É baseado na medida na caixa pai, caso especificamos a medida. Caso não, ele é baseado em 16px
+}
