@@ -12,32 +12,91 @@
 // }
 
 header {
+  height: 20vh;
   display: flex;
   justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo x (horizontal)
   justify-content: flex-end; //Os itens são postos no final do eixo x.
   justify-content: center; //Centraliza os itens no eixo x.
-
+  justify-content: space-between; //O primeiro e o último item ficam encostadas nas laterais, e os demais tem o  mesmo espaçamento entre sí.
   justify-content: space-evenly; //Tem o mesmo espaçamento entre os itens.
   justify-content: space-around; //Espaçamento ao redor
-  justify-content: space-between; //O primeiro e o último item ficam encostadas nas laterais, e os demais tem o  mesmo espaçamento entre sí.
 
-  background-color: pink;
+  align-items: flex-start; //Os itens são alinhados no começo do eixo Y.
+  align-items: flex-end; //Os itens são alinhados no final do eixo Y.
+  align-items: center; //Os itens são alinhados no meio do eixo. Eixo Y vertical.
+
+  background-color: #d9d9d9; //Hexadecimal, composto por uma combinação de três conjuntos de pares formados por letras de A a F.
+  background-color: #ff0000;
+  background-color: #00ff00;
+  background-color: #0000ff;
+  background-color: #9370db; //chamando cor pelo hexadecimal
+  background-color: MediumPurple; //chamando cor pelo nome
+  background-color: rgb(147, 112, 219); //chamando cor pelo nome RGB
+  background-color: #d9d9d9;
 }
 
 nav {
-  background-color: yellow; //background-color: cor de fundo
+  // background-color: yellow; //background-color: cor de fundo
   width: 50%; //width=largura , Pegando 60% do tamanho da header. Sempre vai ser baseada na caixa pai.
   width: 50vw; //viewport width. Sempre vai ser baseada no tamanho da janela de exibição.
 }
 
 ul {
-  border: solid blue; //border=borda, solid=tipo da borda, blue=cor da borda.
+  // border: solid blue; //border=borda, solid=tipo da borda, blue=cor da borda.
   display: flex;
   justify-content: space-evenly;
+  list-style: none; //List-style é o estilo da lista. none: não quero estilo para essa lista.
 }
 
 li {
   font-size: 32px; //font-size= tamanho da fonte
   font-size: 2rem; // 16*2 = 32 É baseado na medida do elemento raiz, caso especificamos a medida. Caso não, ele é baseado em 16px
   font-size: 2em; //16*2 = 32 É baseado na medida na caixa pai, caso especificamos a medida. Caso não, ele é baseado em 16px
+
+  //Text transform é a transformação do texto. Capitalize, lowercase e uppercase.
+
+  text-transform: lowercase; //tudo fica minúsculo
+  text-transform: uppercase; //tudo fica maiúsculo
+  text-transform: capitalize;
+}
+
+//Text-decoration é a decoração do texto, defini a formatação, como: underline, overline e none.
+a {
+  text-decoration: underline; //linha abaixo
+  text-decoration: overline; //linha acima
+  text-decoration: none; //sem decoração
+  color: #000000;
+}
+
+.containerHistoria {
+  // border: solid red;
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row; //Linha, é o comportamento padrão.
+  flex-direction: row-reverse; //Linha reversa
+  flex-direction: column-reverse; //Coluna reversa
+  flex-direction: column; //Coluna
+  align-items: center;
+  justify-content: space-evenly;
+
+  h2 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+
+  p {
+    //border: solid blue;
+    width: 70%;
+    font-size: 24px;
+    font-size: 1.5rem; //16 + 8 = 24
+    text-align: justify; //Texto justificado
+    text-align: left; //Texto alinhaado à esquerda
+    text-align: right; //Texto alinhado à direita
+    text-align: center; //Texto centralizado
+  }
+
+  img {
+    width: 60%;
+  }
 }
