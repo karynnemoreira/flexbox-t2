@@ -68,6 +68,11 @@ a {
   color: #000000;
 }
 
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .containerHistoria {
   // border: solid red;
   width: 40%;
@@ -83,6 +88,7 @@ a {
   h2 {
     font-size: 32px;
     font-size: 2rem;
+    font-weight: 700;
   }
 
   p {
@@ -94,9 +100,59 @@ a {
     text-align: left; //Texto alinhaado à esquerda
     text-align: right; //Texto alinhado à direita
     text-align: center; //Texto centralizado
+    font-weight: 400;
   }
 
   img {
     width: 60%;
+  }
+}
+
+.containerLogistica {
+  //border: solid blue;
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 700; //De 100 a 900, contando de 100 em 100
+    // font-weight: bold; //negrito
+    // font-weight: lighter; //leve
+  }
+
+  p {
+    font-size: 1.5rem;
+    width: 60%;
+    font-size: 24px;
+    font-size: 1.5rem; //16 + 8 = 24
+    text-align: center;
+    font-weight: 400;
+  }
+
+  button {
+    background-color: #d9d9d9;
+    font-size: 2rem;
+    width: 10vw;
+    height: 7vh;
+    font-weight: 700;
+    border-radius: 20px 20px 20px 20px; //1º Esquerda superior - 2º Direita superior - 3º Direita inferior - 4º Esquerda inferior
+    border-radius: 30px; //Com um único valor, se aplica aos quatro cantos
+  }
+}
+
+footer {
+  height: 10vh;
+  background-color: #001c43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.25rem;
+    color: #ffffff;
   }
 }
